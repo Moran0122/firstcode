@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+    <!--struts2.0默认的配置文件 -->
+    <include file="struts-default.xml"></include>
+
+    <!-- 也可以加载其他的配置文件 -->
+    <!-- <include file="mystrutsconfig.xml"></include> -->
+    <!-- 添加package -->
+
+    <package name="useraction" extends="struts-default">
+
+        <!-- 配置login.action -->
+
+        <action name="login" class="action.UserAction">
+
+            <result name="success">success.jsp</result>
+
+
+
+        </action>
+
+    </package>
+
+</struts>
